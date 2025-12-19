@@ -33,11 +33,20 @@
 
 //Question 3:  crate a product that storees and prices and has a method which return the final price after discount.
 
+// let product={
+//     cloths:"jeans",
+//     price:3500,
+//     function(){
+//       return  this.price -200
+//     }
+// }
+// console.log(product.function())
+
 let product={
     cloths:"jeans",
     price:3500,
-    function(){
+  discountprice:  function(){
       return  this.price -200
     }
 }
-console.log(product.function())
+console.log(product.discountprice())
