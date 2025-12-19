@@ -16,17 +16,28 @@
 //first,think how youu would manage them withouut usinnnng a class
 //thhhennn connnvert the same logic usimmmmmmg a class annnnnnd observe how thhhe code becomes cleaer. write code for bothh approaces.
 
-class User{
-    constructor(name,mail){
-this.name=name;
-this.mail=mail;
- }
-    loggend(){
-        console.log("loggend in")
+// class User{
+//     constructor(name,mail){
+// this.name=name;
+// this.mail=mail;
+//  }
+//     loggend(){
+//         console.log("loggend in")
+//     }
+// }
+
+// let User1=new User("ejaz","ejazahmad@gmail.com")
+// let User2=new User("ejaz","ejazahmad@gmail.com")
+
+// console.log(User1,User2)
+
+//Question 3:  crate a product that storees and prices and has a method which return the final price after discount.
+
+let product={
+    cloths:"jeans",
+    price:3500,
+    function(){
+      return  this.price -200
     }
 }
-
-let User1=new User("ejaz","ejazahmad@gmail.com")
-let User2=new User("ejaz","ejazahmad@gmail.com")
-
-console.log(User1,User2)
+console.log(product.function())
