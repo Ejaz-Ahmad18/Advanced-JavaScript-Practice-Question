@@ -70,15 +70,31 @@
 
 //Question 5: crate two differnt car objects from the same class and verify that their data is differeneet
 
-class car{
-    constructor(brand,speed){
-        this.brand=brand;
-        this.speed=speed;
+// class car{
+//     constructor(brand,speed){
+//         this.brand=brand;
+//         this.speed=speed;
+//     }
+//     drive(){
+//         return this.brand +"--"+ this.speed;
+//     }
+// }
+// let car1=new car("maruti",160)
+// let car2=new car("hundai",180)
+// console.log(car1.drive(),car2.drive())
+
+//Question 6: crate  a student class whose constructor accepts name and roll number
+//add a method introduce that prints both values
+
+class student{
+    constructor(name,rollnumber){
+        this.name=name;
+        this.rollnumber=rollnumber;
     }
-    drive(){
-        return this.brand +"--"+ this.speed;
+    introduce(){
+        return this.name +"--"+ this.rollnumber;
     }
 }
-let car1=new car("maruti",160)
-let car2=new car("hundai",180)
-console.log(car1.drive(),car2.drive())
+let str1=new student("ejaz",1)
+
+console.log(str1.introduce())
