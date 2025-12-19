@@ -56,6 +56,20 @@
 //speed
 //a drive two method that prints the car brnad and speed
 
+// class car{
+//     constructor(brand,speed){
+//         this.brand=brand;
+//         this.speed=speed;
+//     }
+//     drive(){
+//         return this.brand +"--"+ this.speed;
+//     }
+// }
+// let car1=new car("maruti",160)
+// console.log(car1.drive())
+
+//Question 5: crate two differnt car objects from the same class and verify that their data is differeneet
+
 class car{
     constructor(brand,speed){
         this.brand=brand;
@@ -66,4 +80,5 @@ class car{
     }
 }
 let car1=new car("maruti",160)
-console.log(car1.drive())
+let car2=new car("hundai",180)
+console.log(car1.drive(),car2.drive())
