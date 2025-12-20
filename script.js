@@ -124,22 +124,38 @@
 
 //Question 2:
 
-function getUser(username,cb){
-    console.log("getting user details.....")
+// function getUser(username,cb){
+//     console.log("getting user details.....")
+//     setTimeout(function(){
+// cb({id:1,username:"ejaz ahmad"})
+//     },1000)
+// }
+// function getUserposts(id,cb){
+//     console.log("getting user posta.....")
+//     setTimeout(function(){
+// cb(["hello","good dday","fuck you"])
+//     },2000)
+// }
+
+// getUser("ejaz",function(data){
+//     getUserposts(data.id,function(allposts){
+//  console.log(data.username,allposts)
+//     })
+   
+// })
+
+//Question 3:
+
+function instagramSeDataLaoo(username,cb){
+    console.log("getting instagram details.....")
     setTimeout(function(){
-cb({id:1,username:"ejaz ahmad"})
-    },1000)
-}
-function getUserposts(id,cb){
-    console.log("getting user posta.....")
-    setTimeout(function(){
-cb(["hello","good dday","fuck you"])
+cb({uniqueId:748,username:"ejaz ahmad"})
     },2000)
 }
 
-getUser("ejaz",function(data){
-    getUserposts(data.id,function(allposts){
- console.log(data.username,allposts)
-    })
+instagramSeDataLaoo("ejaz ahmad",function(data){
+   
+ console.log(data)
+   
    
 })
