@@ -111,12 +111,35 @@
 //givn time ke baad callback call kare
 
 
-function afterDelay(time,cb){
+// function afterDelay(time,cb){
+//     setTimeout(function(){
+// cb()
+//     },time)
+// }
+
+// afterDelay(3000,function(){
+//     console.log("callback executed")
+// })
+
+
+//Question 2:
+
+function getUser(username,cb){
+    console.log("getting user details.....")
     setTimeout(function(){
-cb()
-    },time)
+cb({id:1,username:"ejaz ahmad"})
+    },1000)
+}
+function getUserposts(id,cb){
+    console.log("getting user posta.....")
+    setTimeout(function(){
+cb(["hello","good dday","fuck you"])
+    },2000)
 }
 
-afterDelay(3000,function(){
-    console.log("callback executed")
+getUser("ejaz",function(data){
+    getUserposts(data.id,function(allposts){
+ console.log(data.username,allposts)
+    })
+   
 })
