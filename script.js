@@ -86,15 +86,17 @@
 //Question 6: crate  a student class whose constructor accepts name and roll number
 //add a method introduce that prints both values
 
-class student{
-    constructor(name,rollnumber){
-        this.name=name;
-        this.rollnumber=rollnumber;
-    }
-    introduce(){
-        return this.name +"--"+ this.rollnumber;
-    }
-}
-let str1=new student("ejaz",1)
+// class student{
+//     constructor(name,rollnumber){
+//         this.name=name;
+//         this.rollnumber=rollnumber;
+//     }
+//     introduce(){
+//         return this.name +"--"+ this.rollnumber;
+//     }
+// }
+// let str1=new student("ejaz",1)
 
-console.log(str1.introduce())
+// console.log(str1.introduce())
+
+// Advnaced JavaScript CallBack Questions
