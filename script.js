@@ -99,4 +99,24 @@
 
 // console.log(str1.introduce())
 
+
+
 // Advnaced JavaScript CallBack Questions
+
+//Question 1: ek function batoo afterDelay
+//requiremnt:
+//ye function 2 cheeze lega
+//time(milliseconds)
+//callback function
+//givn time ke baad callback call kare
+
+
+function afterDelay(time,cb){
+    setTimeout(function(){
+cb()
+    },time)
+}
+
+afterDelay(3000,function(){
+    console.log("callback executed")
+})
