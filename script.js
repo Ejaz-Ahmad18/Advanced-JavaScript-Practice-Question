@@ -146,16 +146,16 @@
 
 //Question 3:
 
-function instagramSeDataLaoo(username,cb){
-    console.log("getting instagram details.....")
-    setTimeout(function(){
-cb({uniqueId:748,username:"ejaz ahmad"})
-    },2000)
-}
+// function instagramSeDataLaoo(username,cb){
+//     console.log("getting instagram details.....")
+//     setTimeout(function(){
+// cb({uniqueId:748,username:"ejaz ahmad"})
+//     },2000)
+// }
 
-instagramSeDataLaoo("ejaz ahmad",function(data){
+// instagramSeDataLaoo("ejaz ahmad",function(data){
    
- console.log(data)
+//  console.log(data)
    
    
-})
+// })
